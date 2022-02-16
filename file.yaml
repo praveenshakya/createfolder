@@ -1,0 +1,14 @@
+- name: Hello World Sample
+  hosts: all
+  tasks:
+    - name: Hello Message
+      debug:
+        msg: "Hello World!"
+    - name: Creates directory
+      file:
+        path: /tmp
+        state: directory
+        owner: root
+        group: root
+        mode: 0775
+        recurse: yes
