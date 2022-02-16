@@ -1,7 +1,6 @@
 ---
 - name: RDS  Creation
   hosts: all
-  become: yes
   tasks:
   - name: RDS Creation
     rds:
