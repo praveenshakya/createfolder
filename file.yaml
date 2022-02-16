@@ -8,7 +8,7 @@
       file:
         path: "{{ item }}"
         state: directory
-     with_items:
+      with_items:
       - /tmp/www
       - /tmp/foo
       - /temp/bar
