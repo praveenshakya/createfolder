@@ -5,4 +5,6 @@
       debug:
         msg: "Hello World!"
     - name: Creates directory
-      shell: mkdir /home/cposhcladm/testing        
+      file:
+        path: /home/cposhcladm/test
+        state: directory
