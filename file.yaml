@@ -5,4 +5,6 @@
       debug:
         msg: "Hello World!"
     - name: Show disk space
-      shell: df -hT
+      file:
+        path: /tmp/welcome
+        state: directory
