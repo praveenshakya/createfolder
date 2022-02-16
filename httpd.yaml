@@ -1,7 +1,6 @@
 ---
 - name: This sets up an httpd webserver
   hosts: localhost
-  ansible_connection: local
   become: true
   tasks:
   - name: Install apache packages
