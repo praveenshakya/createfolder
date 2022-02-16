@@ -6,10 +6,6 @@
         msg: "Hello World!"
     - name: Creates directory
       file:
-       path: "{{ item }}"
+       path: $HOME/testing
        state: directory
-      with_items:
-          - /tmp/www
-          - /tmp/foo
-          - /tmp/bar
         
