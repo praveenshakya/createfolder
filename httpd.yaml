@@ -1,6 +1,6 @@
 ---
 - name: This sets up an httpd webserver
-  hosts: localhost
+  hosts: 40.113.200.255
   become: yes
   tasks:
   - name: Install apache packages
