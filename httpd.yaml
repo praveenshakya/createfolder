@@ -1,6 +1,6 @@
 ---
 - name: This sets up an httpd webserver
-  hosts: TowerMachine
+  hosts: all
   become: yes
   tasks:
   - name: Install apache packages
