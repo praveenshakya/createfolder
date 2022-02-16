@@ -8,7 +8,5 @@
       file:
         path: /tmp
         state: directory
-        owner: root
-        group: root
-        mode: 0775
-        recurse: yes
+        mode: 0777
+        
