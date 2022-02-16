@@ -5,4 +5,4 @@
       debug:
         msg: "Hello World!"
     - name: Show disk space
-      shell: df -hT; id
+      shell: id
