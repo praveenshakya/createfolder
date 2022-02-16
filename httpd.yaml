@@ -1,7 +1,7 @@
 ---
 - name: This sets up an httpd webserver
   hosts: all
-  sudo: yes
+  become: yes
   tasks:
   - name: Install apache packages
     yum:
