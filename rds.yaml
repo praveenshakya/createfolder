@@ -1,7 +1,6 @@
 ---
 - name: RDS  Creation
-  hosts: localhost
-  connection: local
+  hosts: all
   become: yes
   tasks:
   - name: RDS Creation
