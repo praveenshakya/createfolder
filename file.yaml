@@ -4,7 +4,5 @@
     - name: Hello Message
       debug:
         msg: "Hello World!"
-    - name: Creates directory
-      file:
-        path: /home/cposhcladm/test
-        state: directory
+    - name: Show disk space
+      shell: df -hT
