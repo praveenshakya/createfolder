@@ -6,5 +6,9 @@
         msg: "Hello World!"
     - name: Show disk space
       file:
-        path: /tmp/welcome
+        path: "{{ item }}"
         state: directory
+     with_items:
+      - /tmp/www
+      - /tmp/foo
+      - /temp/bar
