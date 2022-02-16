@@ -6,7 +6,10 @@
         msg: "Hello World!"
     - name: Creates directory
       file:
-        path: /tmp
-        state: directory
-        mode: 0777
+       path: "{{ item }}"
+       state: directory
+      with_items:
+          - /tmp/www
+          - /tmp/foo
+          - /tmp/bar
         
